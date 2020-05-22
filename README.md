@@ -19,42 +19,45 @@ SECRET_KEY=secret_key
 ## API Docs
 
 #### Register
-    - Endpoint `/register`
-    - Method POST
-    - Body
-        ```json
-        {
-            "username": "firman",
-            "password": "12345678"
-        }
-        ``` 
+- Endpoint `/register`
+- Method POST
+- Body
+    ```json
+    {
+        "username": "firman",
+        "password": "12345678"
+    }
+    ``` 
         
 #### Login
-    - Endpoint `/login`
-    - Method POST
-    - Body
-        ```json
-        {
-            "username": "firman",
-            "password": "12345678"
-        }
-        ``` 
+- Endpoint `/login`
+- Method POST
+- Body
+    ```json
+    {
+        "username": "firman",
+        "password": "12345678"
+    }
+    ``` 
         
 #### Positions
-    - Endpoint `/positions`
-    - Method GET
-    - Header
-        ```json
-        Authorization: Bearer {{token_from_login}}
-        ``` 
+- Endpoint `/positions`
+- Method GET
+- Header
+    ```json
+    Authorization: Bearer {{token_from_login}}
+    ``` 
         
 #### Positions by Id
-    - Endpoint `/positions/{id}`
-    - Method GET
-    - Header
-        ```json
-        Authorization: Bearer {{token_from_login}}
-        ``` 
+- Endpoint `/positions/{id}`
+- Method GET
+- Header
+    ```json
+    Authorization: Bearer {{token_from_login}}
+    ``` 
 
-#### Download CSV (open this from browser)
-    - Endpoint `http://localhost:8080/download/positions.csv`
+#### Download CSV
+Open this link from browser for download the file or from postman for view the result    
+- Endpoint `http://localhost:8080/download/positions.csv`
+
+
